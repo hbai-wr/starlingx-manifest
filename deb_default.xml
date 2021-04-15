@@ -4,11 +4,12 @@
   <remote name="starlingx" fetch="https://github.com/hbai-wr/" />
   <!-- note, you can also provide personal overrides for your own github -->
   <!-- for tests/experiments -->
+  <default revision="f/debian11" remote="starlingx"/>
+
+  <project remote="starlingx"  name="build-tools.git" path="cgcs-root/build-tools"/>
+  <project remote="starlingx"  name="integ.git" path="cgcs-root/stx/integ"/>
 
   <remote name="stx-staging" fetch="https://github.com/starlingx-staging"/>
   <default revision="master" remote="stx-staging"/>
 
-  <project remote="starlingx"  name="build-tools.git" path="cgcs-root/build-tools"/>
-
-  <project remote="starlingx"  name="integ.git" path="cgcs-root/stx/integ"/>
 </manifest>
