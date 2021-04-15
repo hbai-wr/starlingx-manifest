@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="starlingx" fetch="https://github.com/hbai-wr/" />
+  <!-- note, you can also provide personal overrides for your own github -->
+  <!-- for tests/experiments -->
+
+  <remote name="stx-staging" fetch="https://github.com/starlingx-staging"/>
+  <default revision="master" remote="stx-staging"/>
+
+  <project remote="starlingx"  name="build-tools.git" path="cgcs-root/build-tools"/>
+
+  <project remote="starlingx"  name="integ.git" path="cgcs-root/stx/integ"/>
+</manifest>
